@@ -1,1 +1,40 @@
-{     "devDependencies": {         "trumpet": "*",         "electron-lite": "kaizhu256/node-electron-lite#alpha",         "utility2": "kaizhu256/node-utility2#alpha"     },     "name":"npmtest-trumpet",     "homepage": "https://github.com/npmtest/node-npmtest-trumpet",     "repository": {         "type": "git",         "url": "https://github.com/npmtest/node-npmtest-trumpet.git"     },     "scripts": {         "build-ci": "utility2 shReadmeTest build_ci.sh"     },     "version": "0.0.1" }
+{
+    "author": "kai zhu <kaizhu256@gmail.com>",
+    "description": "test coverage for [trumpet (v1.7.2)](https://github.com/substack/node-trumpet#readme) [![npm package](https://img.shields.io/npm/v/npmtest-trumpet.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-trumpet) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-trumpet.svg)](https://travis-ci.org/npmtest/node-npmtest-trumpet)",
+    "devDependencies": {
+        "electron-lite": "kaizhu256/node-electron-lite#alpha",
+        "trumpet": "*",
+        "utility2": "kaizhu256/node-utility2#alpha"
+    },
+    "engines": {
+        "node": ">=4.0"
+    },
+    "homepage": "https://github.com/npmtest/node-npmtest-trumpet",
+    "keywords": [
+        "coverage",
+        "test",
+        "trumpet"
+    ],
+    "license": "MIT",
+    "main": "lib.npmtest_trumpet.js",
+    "name": "npmtest-trumpet",
+    "nameAlias": "npmtest_trumpet",
+    "nameOriginal": "npmtest-trumpet",
+    "os": [
+        "darwin",
+        "linux"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/npmtest/node-npmtest-trumpet.git"
+    },
+    "scripts": {
+        "build-ci": "utility2 shReadmeTest build_ci.sh",
+        "env": "env",
+        "heroku-postbuild": "(set -e; npm install \"kaizhu256/node-utility2#alpha\"; utility2 shDeployHeroku)",
+        "postinstall": "if [ -f npm_scripts.sh ]; then ./npm_scripts.sh postinstall; fi",
+        "start": "(set -e; export PORT=${PORT:-8080}; utility2 start test.js)",
+        "test": "(set -e; export PORT=$(utility2 shServerPortRandom); utility2 test test.js)"
+    },
+    "version": "0.0.1"
+}
