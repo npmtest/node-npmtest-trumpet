@@ -1,6 +1,6 @@
 # npmtest-trumpet
 
-#### test coverage for  [trumpet (v1.7.2)](https://github.com/substack/node-trumpet#readme)  [![npm package](https://img.shields.io/npm/v/npmtest-trumpet.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-trumpet) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-trumpet.svg)](https://travis-ci.org/npmtest/node-npmtest-trumpet)
+#### basic test coverage for  [trumpet (v1.7.2)](https://github.com/substack/node-trumpet#readme)  [![npm package](https://img.shields.io/npm/v/npmtest-trumpet.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-trumpet) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-trumpet.svg)](https://travis-ci.org/npmtest/node-npmtest-trumpet)
 
 #### parse and transform streaming html using css selectors
 
@@ -10,7 +10,7 @@
 |--:|:--|
 | coverage : | [![istanbul-coverage](https://npmtest.github.io/node-npmtest-trumpet/build/coverage.badge.svg)](https://npmtest.github.io/node-npmtest-trumpet/build/coverage.html/index.html)|
 | test-report : | [![test-report](https://npmtest.github.io/node-npmtest-trumpet/build/test-report.badge.svg)](https://npmtest.github.io/node-npmtest-trumpet/build/test-report.html)|
-| build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-trumpet/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-trumpet/tree/gh-pages/build)|
+| test-server-github : | [![github.com test-server](https://npmtest.github.io/node-npmtest-trumpet/GitHub-Mark-32px.png)](https://npmtest.github.io/node-npmtest-trumpet/build/app/index.html) | | build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-trumpet/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-trumpet/tree/gh-pages/build)|
 
 - [https://npmtest.github.io/node-npmtest-trumpet/build/coverage.html/index.html](https://npmtest.github.io/node-npmtest-trumpet/build/coverage.html/index.html)
 
@@ -90,7 +90,8 @@
     "scripts": {
         "test": "tape test/*.js"
     },
-    "version": "1.7.2"
+    "version": "1.7.2",
+    "bin": {}
 }
 ```
 
